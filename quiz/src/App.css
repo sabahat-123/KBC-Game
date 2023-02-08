@@ -1,0 +1,247 @@
+.App {
+  height: 110vh;
+  color: white;
+  background-color: #020230;
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url("https://pbs.twimg.com/media/E9oUBQvVcAMogCh.jpg:large")
+    center;
+  height: 100%;
+  background-size: cover;
+}
+.userName{
+  text-align: center;
+  margin-top: 23%;
+  color: #fff;
+  font-weight: 700;
+}
+.quiz {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question {
+  width: 80%;
+  background: linear-gradient(#100241, black);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 20px;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.answer {
+  width: 40%;
+  padding: 10px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22074d);
+  border: 1px solid white;
+  border-radius: 65px;
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.answer:hover,
+.answer.active {
+  background: teal;
+  color: black;
+}
+.item {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+
+.item.active {
+  background-color: teal;
+}
+
+.money {
+  background-color: #020230;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.money-list {
+  padding: 20px;
+  list-style: none;
+  width: 100%;
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.timer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 600px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #0e0124;
+}
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: teal;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: #33d40f;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: whitesmoke;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: red;
+  }
+}
+
+/* first page style */
+.main-start{
+  display: flex;
+  flex-direction: row;
+  justify-content:stretch;
+  align-items: center;
+  margin: 2% 0% 0% 22%;
+}
+
+.main-start>h1{
+  font-weight: 300;
+}
+.start {
+  width: 550px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 3;
+  
+  /* background:linear-gradient(#774a01, #08001d);  */
+  
+}
+
+.startInput {
+  width: 70%;
+  height: 25%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+   text-transform: uppercase;
+   line-height: 3;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startButton {
+  width: 70%;
+  height: 25%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight:bold;
+  letter-spacing: 1px;
+  background:linear-gradient(#3ef43e, #017b2a);
+ text-transform: uppercase;
+  color: white;
+}
+.instruction{
+  /* box-shadow:
+  0 0 7px rgb(7, 231, 231),
+  0 0 10px rgb(3, 217, 210); */
+  line-height: 2.2;
+  text-align: justify;
+  margin-left: 120px;
+  margin-top: 100px;
+}
+.instruction>h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.input-div{
+  margin-left: -100px;
+}
+.earned {
+  position: relative;
+  margin: auto;
+  margin-top: 400px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+strong{
+  
+  background: -webkit-linear-gradient(#FEBE10, #F0E68C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.quitBtn{
+  color: #000;
+}
