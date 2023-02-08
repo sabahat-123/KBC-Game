@@ -16,7 +16,7 @@
 }
 .userName{
   text-align: center;
-  margin-top: 400px;
+  margin-top: 20%;
   color: #fff;
   font-weight: 700;
 }
@@ -230,7 +230,7 @@
 .earned {
   position: relative;
   margin: auto;
-  margin-top: 400px;
+  margin-top: 20%;
   color: #fff;
   font-weight: 600;
   text-align: center;
